@@ -1,0 +1,53 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+/* Hide the scrollbar */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  max-height: 100px;
+  /* Keep aspect ratio */
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+  flex-grow: 1;
+  /* with the following two settings we guarantee that the width and height will 
+  respect aspect ratio, that is the image will grow to achieve the max size */
+  width: auto;
+  height: auto;
+}
+
+.row__poster:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+.row__posterLarge {
+  max-height: 250px;
+  /* max-width: 250px; */
+  /* with the following two settings we guarantee that the width and height 
+  will respect aspect ratio, that is the image will grow to achieve the max size */
+  width: auto;
+  height: auto;
+}
+
+.row__movieName {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.row__movieElement {
+  display: flex;
+  flex-direction: column;
+}

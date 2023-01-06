@@ -1,0 +1,73 @@
+.planScreen {
+  display: flex;
+  flex-direction: column;
+}
+
+.plansScreen > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
+}
+
+.plansScreen > h4 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.plansScreen__plan {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Another way to apply the hover effect to the whole div would be by 
+  defining an initial opacity of 0.8 and setting it to 1 when hover (Sonny's solution) */
+  /* opacity: 0.8; */
+}
+
+.plansScreen__plan * {
+  color: rgb(211, 201, 201);
+}
+
+/* With this setting we apply the hover over the whole div child elements
+ as long as we hover on any part inside the div boundaries 
+ See: https://stackoverflow.com/questions/7139126/better-solution-for-changing-children-color-on-parent-hover*/
+.plansScreen__plan:hover,
+.plansScreen__plan:hover * {
+  color: #fff;
+  /* Another way to apply the hover effect would be by setting the opacity to 1 (Sonny's solution) */
+  /* opacity: 1; */
+}
+
+.plansScreen__planDescription > h2 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.plansScreen__button {
+  /* color: #fff; */
+  background-color: #e50914;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.plansScreen__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plansScreen__modalPaper {
+  background-color: rgb(34, 29, 29);
+  color: rgb(211, 201, 201);
+  border: 2px solid #000;
+  box-shadow: 10px 5px 5px rgb(16, 175, 69);
+  padding: 40px;
+}
+
+.plansScreen__modalPaper > h1 {
+  font-size: 1rem;
+  font-weight: 700;
+}

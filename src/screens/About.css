@@ -1,0 +1,92 @@
+.about {
+  display: flex;
+  /* height: 100vh; */
+  /* width: 100%; */
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  /* width: 50%; */
+  /* For low res screens so that the contents 
+  won't be overlaped by the Nav component, which is fixed */
+  padding-top: 8%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about__bold {
+  font-weight: bold;
+}
+
+.about__title {
+  align-items: center;
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  /* width: 100vw; */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about__h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 10px;
+}
+
+.about__p {
+  /* align to the left this particular item */
+  align-self: flex-start;
+  text-align: justify;
+}
+
+.about__title {
+  border-bottom: 1px solid gray;
+}
+
+.about__tmdbLogo {
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  /* margin-top: 10px; */
+}
+
+.about__attributions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__tmdb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  /* margin-top: 10px; */
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+/* Apply a top margin (useful when the flexbox is wrapped so that there
+will be a space between the description and the logo */
+.about__tmdb > * {
+  margin-top: 10px;
+}
+
+.about__descriptionWithLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin-top: 10px;
+  border-bottom: 0.5px solid lightgray;
+  padding-bottom: 10px;
+}
+
+a {
+  color: gray;
+}
+
+.about__attributionsTitle {
+  margin-top: 10px;
+}

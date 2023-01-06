@@ -1,0 +1,130 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  /* Url Attribution: Photo by Pixabay from Pexels: https://www.pexels.com/photo/food-snack-popcorn-movie-theater-33129/*/
+  background: url("https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&h=3456&w=4608")
+    center no-repeat;
+  background-size: cover;
+}
+.loginScreen__logo {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  width: 150px;
+  /* Keep the image's aspect ratio if  we change it's width in the future */
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen__leftButtons {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.loginScreen__about {
+  color: gray;
+  font-size: 2.5rem !important;
+  height: 40px !important;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.loginScreen__about:hover {
+  color: #e50914;
+}
+
+.loginScreen__button {
+  /* position: fixed;
+  right: 20px;
+  top: 20px; */
+  background-color: #e50914;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loginScreen__button:hover {
+  background-color: brown;
+}
+/* This class is used to make the background image visible 
+This happens because before we added this div there was nothing actually 
+in the body, hence the image wasn't showing*/
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  /* Optional: we add a gradient to the background so that the background will
+  have an obscure effect: */
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__body {
+  position: absolute;
+  top: 30%;
+  /* We set the margins left and right auto to make this item centered. 
+  However it doesn't work because in order to apply this setting the position must not
+  be absolute but relative. I would not work even if we set the position to relative
+  because in order to center the item with these two conditions, the item must have
+  a fixed width (for example 400px) 
+  20210820: the solution was to add the right:0; and left:0; properties, then it worked*/
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* width: 400px; */
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen__input {
+  margin: 20px;
+}
+
+.loginScreen__getStarted {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
