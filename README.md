@@ -1,16 +1,25 @@
 # Netflix-React Movies & Series DB
 
-Netflix-like portal. The movie posters, thumbnails and descriptions are dynamically retrieved from TMDB through its API and react-axios component. The movies are classified by different categories. There is also the option to watch the corresponding YouTube trailers when clicking on a thumbnail the app gets the movie name which is passed to the [movie-trailer](https://www.npmjs.com/package/movie-trailer) API to look for the corresponding YouTube movie ID which if found will be passed to the [react-youtube](https://www.npmjs.com/package/react-youtube) component to play it in a modal.
+Netflix-like portal. The movie posters, thumbnails and descriptions are dynamically retrieved from TMDB through its [API](https://www.themoviedb.org/documentation/api) and react-axios component. The movies are classified by different categories. There is also the option to watch the corresponding YouTube trailers when clicking on a thumbnail the app gets the movie name which is passed to the [movie-trailer](https://www.npmjs.com/package/movie-trailer) API to look for the corresponding YouTube movie ID which if found will be passed to the [react-youtube](https://www.npmjs.com/package/react-youtube) component to play it in a modal.
 
 See it in action at: https://movies-db2.web.app/
 
 To sign in you can register with your email or use the following test credentials: Email: test@gmail.com Password: test123 to sig in.
 
 ## Screenshots:
+<div align="center">
+  <img src="screenshots/MoviesDb-react.jpg" alt="screenshot" width="700" style="width:700px;"/>
+</div>
 
-<img src="screenshots/MoviesDb-react.jpg" alt="screenshot" width="700">
+## Technologies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template as well as the following components, services & dependencies:
+- [Material UI V4](https://v4.mui.com/).
+- [Material UI Icons](https://v4.mui.com/components/material-icons/#material-icons).
+- [TMDB API](https://www.themoviedb.org/documentation/api)
+- [Axios](https://github.com/axios/axios) for making http requests to the TMDB API.
+- [movie-trailer](https://www.npmjs.com/package/movie-trailer) to obtain YouTube movie IDs from a given movie name.
+- [react-youtube](https://www.npmjs.com/package/react-youtube) component to play YouTube videos.
 
 ## Available Scripts
 
