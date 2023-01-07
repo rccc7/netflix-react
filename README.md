@@ -20,6 +20,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Axios](https://github.com/axios/axios) for making http requests to the TMDB API.
 - [movie-trailer](https://www.npmjs.com/package/movie-trailer) to obtain YouTube movie IDs from a given movie name.
 - [react-youtube](https://www.npmjs.com/package/react-youtube) component to play YouTube videos.
+- [Firebase](https://firebase.google.com/) for hosting and  authentication.
+
+## Disclaimer
+
+This application was developed with the purpose of making a UI similar to Netflix by implementing ReactJs components, Redux, Firebase, as well as other react hooks and components. The movie posters, thumbnails, and descriptions are dynamically retrieved from TMDB through its API and react-axios component. 
 
 ## Available Scripts
 
