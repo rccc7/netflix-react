@@ -2,6 +2,8 @@
 
 Netflix-like portal. The movie posters, thumbnails and descriptions are dynamically retrieved from TMDB through its API and react-axios component. The movies are classified by different categories. There is also the option to watch the corresponding YouTube trailers when clicking on a thumbnail the app gets the movie name which is passed to the [movie-trailer](https://www.npmjs.com/package/movie-trailer) API to look for the corresponding YouTube movie ID which if found will be passed to the [react-youtube](https://www.npmjs.com/package/react-youtube) component to play it in a modal.
 
+See it in action at: https://movies-db2.web.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
