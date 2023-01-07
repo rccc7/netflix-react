@@ -6,6 +6,10 @@ See it in action at: https://movies-db2.web.app/
 
 To sign in you can register with your email or use the following test credentials: Email: test@gmail.com Password: test123 to sig in.
 
+## Screenshots:
+
+<img src="screenshots/MoviesDb-react.jpg" alt="screenshot" width="700">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
